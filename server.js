@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const PORT = 9100;
 const express = require("express");
 
 
@@ -8,11 +7,12 @@ const app = express();
 
 // get  request for render page  in this rooute
 app.use("/static", express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/signup", (req, res) => {
     res.sendFile(path.join(__dirname, "public/html/signup.html"));
 });
-app.get("/user", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public/html/user.html"));
 });
 app.get("/admin", (req, res) => {
@@ -366,7 +366,7 @@ app.post("/api/update-cart", (req, res) => {
     });
 });
 
-
-app.listen(PORT, () => {
-    console.log("running at port", PORT);
+const port =  9100;
+app.listen(port, () => {
+    console.log("running at port", port);
 })
