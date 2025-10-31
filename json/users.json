@@ -1,0 +1,29 @@
+[
+   {
+      "currentemail": "ujjwalsaini073@gmail.com"
+   },
+   {
+      "username": "ujjwal",
+      "email": "ujjwalsaini073@gmail.com",
+      "password": "12345678",
+      "checkbox": false
+   },
+   {
+      "username": "host",
+      "email": "host@gmail.com",
+      "password": "12345678",
+      "checkbox": true
+   },
+   {
+      "username": "akshay",
+      "email": "akshay@gmail.com",
+      "password": "12345678",
+      "checkbox": false
+   },
+   {
+      "username": "user",
+      "email": "user1@gmail.com",
+      "password": "12345678",
+      "checkbox": false
+   }
+]

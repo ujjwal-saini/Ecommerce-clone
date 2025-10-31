@@ -1,0 +1,198 @@
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    
+}
+.maincontainer{
+    height: 60px;
+display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.maincontainer h1{
+    margin-left: 35%;
+}
+form{
+    width: 100%;
+    height: auto;
+
+}
+
+.bigcontainer {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+    padding: 5px 0px 23px 0px;
+    margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 18px;
+   width: 100%;
+   height: auto;
+}
+
+.bigcontainer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+}
+span h2 {
+    color: #333;
+    font-size: 1.3rem;
+    width: auto;
+    margin-right: 10px;
+}
+
+.bigcontainer input[type="text"],
+.bigcontainer input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border 0.2s;
+}
+.bigcontainer input:focus {
+    border: 1.5px solid #e67e22;
+    outline: none;
+    background: #fff;
+}
+
+#addbtn {
+    margin-top: 10px;
+    padding: 10px 24px;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(230, 126, 34, 0.08);
+}
+#addbtn:hover {
+    background: #cf711f;
+}
+
+.task-table {
+    width: auto;
+    margin: 40px auto 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    overflow: hidden;
+    table-layout: fixed; /* important for equal column widths */
+}
+
+.task-table th, .task-table td {
+    padding: 14px 28px;
+    text-align: left;
+    font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.task-table th {
+    background: #e67e22;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.task-table tr:nth-child(even) {
+    background: #faf6f2;
+}
+
+.task-table tr:nth-child(odd) {
+    background: #fff;
+}
+
+.task-table td button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #e67e22;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.task-table td button:hover {
+    background: #cf711f;
+}
+
+.task-table thead th,
+.task-table tbody td {
+    width: 37.66%; /* 100% / 6 columns = equal width */
+}
+
+.container {
+    max-height: 300px;
+    overflow-y: auto;
+    width: auto;
+    display: block;
+}
+
+.backbtn{
+    padding: 10px;
+    background-color: green;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    margin:30px;
+    margin-top: 50px;
+    text-decoration: none;
+    
+}
+.maincontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+  #logout {
+            background-color: #ff6b6b;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logoutbtn {
+            border: none;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        #logout:hover {
+            background-color: #ff4c4c;
+            scale: calc(1.03);
+        }
+
+        #logout a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }

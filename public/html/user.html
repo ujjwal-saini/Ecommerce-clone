@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User View</title>
+    <link rel="stylesheet" href="/static/css/user.css" />
+</head>
+
+<body>
+    <header>
+
+        <h1 class="producttext" style="text-align:center;">Product Item</h1>
+        <a id="cartbtn" href="/cart" >Cart</a>
+        <h1 class="profilelogin"><img src="" alt="" class="notloginimg"></h1>
+        <button class="logoutbtn"><a href="/signup"  id="logout">Logout</a></button>
+    </header>
+    <div class="maincontainer">
+        <div class="amountsection">
+            <div id="cards-container" class="cards-container">
+            </div>
+            <div class="buttons"> <button class="leftbtn">pre</button>
+                <div class="curpage"></div> <button class="right">next</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="/static/js/user.js"></script>
+</body>
+
+</html>

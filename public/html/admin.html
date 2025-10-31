@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+  
+   <div class="maincontainer">
+     
+    <h1>Admin Page</h1>
+   <h1 class="profilelogin"><img src="" alt="" class="notloginimg"></h1>
+        <button class="logoutbtn"><a href="/signup"  id="logout">Logout</a></button>
+    </div>
+    <div class="maincontent">
+        <form  id="form"> 
+    <div class="bigcontainer">
+        <span><h2>Product name:</h2><input type="text" id="input" placeholder="name" required/> </span>
+        <span><h2>Quantity:</h2> <input type="number" id="quantity" placeholder="quantity" required/> </span>
+        <span><h2>Price:</h2><input type="number" id="price" placeholder="price" required/> </span>
+        <span><h2>Discription </h2><input type="text" id="discription" placeholder="discription" required/> </span>
+        <span><h2>Image URL:</h2><input type="text" id="imgurl" placeholder="Enter image src" /> </span>
+    </div>
+    <button id="addbtn" type="submit">Add TASK</button>   
+</form>
+    <table class="task-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Description</th> 
+                <th>Edit</th>   
+                <th>Delete</th>       
+            </tr>
+        </thead>
+        <tbody class="container">
+        </tbody>
+    </table>
+</div>
+   <script src="/static/js/admin.js"></script>
+</body>
+
+</html>

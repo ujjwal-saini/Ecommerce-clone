@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/static/css/signup.css">
+<body>
+    <div class="selection">
+        <button class="loginswitch">login</button>
+        <button class="signupswitch">signup</button>
+    </div>
+    <div class="conatiner">
+        <span class="nameswitch"></span>
+      <form id="form" action="/signin" method="POST">
+            <span class="nameinput"><h2>Name:</h2> <input type="text" name="username" placeholder="enter your name" class="username"></span>
+            <span> <h2>Email:</h2><input type="text" name="email" placeholder="enter your email" class="emailid"></span>
+            <span><h2>Password</h2> <input type="password" name="password" placeholder="**********" class="password"></span>
+            <div class="btnsection">
+                <button class="submit-btn" type="submit"> </button>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <span class="admintext"> for Admin</span>
+            </div>
+        </form>
+    </div>
+    <script src="/static/js/signup.js"></script>
+</body>
+</html>
